@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .main-section header {
+    @apply font-medium text-3xl m-[0.625rem] text-primary;
+  }
+
+  article {
+    @apply m-4 text-[0.96em];
+  }
+
+  article p {
+    @apply my-[1em];
+  }
+
+  article ul {
+    @apply block list-disc pl-10;
+  }
+
+  code {
+    @apply block font-mono whitespace-pre-line break-normal leading-[2em] text-accent bg-secondary m-[0.625rem] p-4 rounded-[0.325rem];
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply block py-[0.625rem] no-underline cursor-pointer;
+  }
+}

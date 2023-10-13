@@ -1,54 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="block box-border bg-background sm:text-base text-[0.5rem]">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technical Documentation Page</title>
   <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-  <nav id="navbar">
-    <header>JS Documentation</header>
-    <ul>
-      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-      <li>
+<body class="block w-full min-w-[18.125rem] text-text bg-background font-['Arial'] leading-[1.5em] m-2 overflow-x-auto">
+
+  <nav id="navbar" class="fixed top-0 left-0 sm:min-w-[18.125rem] sm:w-[18.75rem] w-52 h-full border-r-[3px] border-solid border-primary">
+
+    <header class="text-primary font-medium m-[0.625em] leading-[1.5em] text-center sm:text-[1.8rem] text-[1.5rem]">JS Documentation</header>
+
+    <ul class="h-[88%] p-0 overflow-y-auto overflow-x-hidden mx-0 my-4 ms-0 me-0">
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
         <a class="nav-link" href="#What_you_should_already_know"
           >What you should already know</a
         >
       </li>
-      <li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
         <a class="nav-link" href="#JavaScript_and_Java"
           >JavaScript and Java</a
         >
       </li>
-      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-      <li><a class="nav-link" href="#Variables">Variables</a></li>
-      <li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Hello_world">Hello world</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Variables">Variables</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
         <a class="nav-link" href="#Declaring_variables"
           >Declaring variables</a
         >
       </li>
-      <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-      <li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Variable_scope">Variable scope</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
         <a class="nav-link" href="#Global_variables">Global variables</a>
       </li>
-      <li><a class="nav-link" href="#Constants">Constants</a></li>
-      <li><a class="nav-link" href="#Data_types">Data types</a></li>
-      <li>
-        <a class="nav-link" href="#if...else_statement"
-          >if...else statement</a
-        >
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Constants">Constants</a>
       </li>
-      <li><a class="nav-link" href="#while_statement">while statement</a></li>
-      <li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Data_types">Data types</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#if...else_statement">if...else statement</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#while_statement">while statement</a>
+      </li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
         <a class="nav-link" href="#Function_declarations"
           >Function declarations</a
         >
       </li>
-      <li><a class="nav-link" href="#Reference">Reference</a></li>
+      <li class="list-item border-t-2 border-solid border-primary list-none w-full ps-10">
+        <a class="nav-link" href="#Reference">Reference</a>
+      </li>
     </ul>
   </nav>
-  <main id="main-doc">
+
+  <main id="main-doc" class="sm:ml-[19.375rem] ml-[11.5rem] absolute p-5 mb-[6.875rem]">
     <section class="main-section" id="Introduction">
       <header>Introduction</header>
       <article>
@@ -152,23 +170,25 @@
     </section>
     <section class="main-section" id="Variables">
       <header>Variables</header>
-      <p>
-        You use variables as symbolic names for values in your application.
-        The names of variables, called identifiers, conform to certain rules.
-      </p>
-      <p>
-        A JavaScript identifier must start with a letter, underscore (_), or
-        dollar sign ($); subsequent characters can also be digits (0-9).
-        Because JavaScript is case sensitive, letters include the characters
-        "A" through "Z" (uppercase) and the characters "a" through "z"
-        (lowercase).
-      </p>
-      <p>
-        You can use ISO 8859-1 or Unicode letters such as å and ü in
-        identifiers. You can also use the Unicode escape sequences as
-        characters in identifiers. Some examples of legal names are
-        Number_hits, temp99, and _name.
-      </p>
+      <article>
+        <p>
+          You use variables as symbolic names for values in your application.
+          The names of variables, called identifiers, conform to certain rules.
+        </p>
+        <p>
+          A JavaScript identifier must start with a letter, underscore (_), or
+          dollar sign ($); subsequent characters can also be digits (0-9).
+          Because JavaScript is case sensitive, letters include the characters
+          "A" through "Z" (uppercase) and the characters "a" through "z"
+          (lowercase).
+        </p>
+        <p>
+          You can use ISO 8859-1 or Unicode letters such as å and ü in
+          identifiers. You can also use the Unicode escape sequences as
+          characters in identifiers. Some examples of legal names are
+          Number_hits, temp99, and _name.
+        </p>
+      </article>
     </section>
     <section class="main-section" id="Declaring_variables">
       <header>Declaring variables</header>
@@ -333,9 +353,15 @@
           conditions tested in sequence, as follows:
         </p>
         <code
-          >if (condition_1) { statement_1; } else if (condition_2) {
-          statement_2; } else if (condition_n) { statement_n; } else {
-          statement_last; }
+          >if (condition_1) {
+             statement_1; 
+          } else if (condition_2) {
+            statement_2;
+          } else if (condition_n) {
+           statement_n;
+          } else {
+          statement_last;
+         }
         </code>
         In the case of multiple conditions only the first logical condition
         which evaluates to true will be executed. To execute multiple
@@ -448,7 +474,7 @@
         <ul>
           <li>
             All the documentation in this page is taken from
-            <a
+            <a class="underline"
               href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
               target="_blank"
               >MDN</a
@@ -459,6 +485,4 @@
     </section>
   </main>
 </body>
-</html>
-
 </html>
